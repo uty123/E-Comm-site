@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+footer {
+  background-color: rgb(92, 92, 211);
+}
+ul {
+  list-style: none;
+}
+li {
+  padding-bottom: 30px;
+}
+.carousel-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.carousel-caption {
+  bottom: 4rem;
+}
+.carousel-caption h2 {
+  font-size: 4rem;
+}
+.btn-style {
+  padding: 1rem 3rem;
+}
+.new-arrival-card {
+  border: none;
+}
+
+/* ABOUT SECTION*/
+
+.about {
+  background-image: url(https://i.ibb.co/pZyqYYv/pexels-17048478.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-caption {
+  text-align: center;
+  margin: 13rem;
+}
+
+/*double column*/
+
+.caption {
+  position: relative;
+  bottom: 200px;
+  left: 30px;
+}
+.caption p {
+  font-size: 35px;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 1071px;
+  }
+}
+
+@media (min-width: 992px) {
+  #new-arival .container,
+  #new-arival .container-lg,
+  #new-arival .container-md,
+  #new-arival .container-sm {
+    max-width: 871px;
+  }
+}

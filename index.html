@@ -11,6 +11,13 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <!--JS bootstrap link-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -22,10 +29,11 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="stylesheet" href="style.css" />
     <title>Bootstrap Grids</title>
   </head>
   <body>
+    <!--THE NAVIGATION BAR-->
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -74,38 +82,353 @@
         </div>
       </nav>
     </div>
+    <!--THE CAROUSEL SECTION-->
+    <section>
+      <div class="container mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active"
+              style="background-image: url(images/pexels-bianca-1126935.jpg)"
+            >
+              <div class="carousel-caption d-none d-md-block">
+                <h2>
+                  FASHION <br />
+                  CHANGING <br />
+                  ALWAYS
+                </h2>
 
-    <div class="container text-center">
-      <div class="row parent">
-        <div class="col-12 col-md-12">12</div>
+                <a class="btn btn-md btn-success">Shop Now</a>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+              style="
+                background-image: url(images/pexels-cottonbro-studio-10679171.jpg);
+              "
+            >
+              <div class="carousel-caption d-none d-md-block">
+                <h2>
+                  FASHION <br />
+                  CHANGING <br />
+                  ALWAYS
+                </h2>
+                <a class="btn btn-md btn-success">Shop Now</a>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+              style="
+                background-image: url(images/pexels-godisable-jacob-949670.jpg);
+              "
+            >
+              <div class="carousel-caption d-none d-md-block">
+                <h2>
+                  FASHION <br />
+                  CHANGING <br />
+                  ALWAYS
+                </h2>
+                <a class="btn btn-md btn-success">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
+    </section>
 
-      <div class="row parent">
-        <div class="col-12 col-md-6 child">6</div>
-        <div class="col-12 col-md-6 child">6</div>
-      </div>
+    <!--PRODUCT SECTION-->
 
-      <div class="row parent">
-        <div class="col-12 col-md-4 child">4</div>
-        <div class="col-12 col-md-4 child">4</div>
-        <div class="col-12 col-md-4 child">4</div>
-      </div>
-
-      <div class="row parent">
-        <div class="col-12 col-md-3 child">3</div>
-        <div class="col-12 col-md-3 child">3</div>
-        <div class="col-12 col-md-3 child">3</div>
-        <div class="col-12 col-md-3 child">3</div>
-      </div>
-
-      <div class="row parent">
-        <div class="col-12 col-md-2 child">2</div>
-        <div class="col-12 col-md-2 child">2</div>
-        <div class="col-12 col-md-2 child">2</div>
-        <div class="col-12 col-md-2 child">2</div>
-        <div class="col-12 col-md-2 child">2</div>
-        <div class="col-12 col-md-2 child">2</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 child">
+          <img
+            src="images/pix1.jpg"
+            class="img-fluid mb-5"
+            alt="fashion image"
+          />
+        </div>
+        <div class="col-12 col-md-3 child">
+          <img
+            src="images/pix2.jpg"
+            class="img-fluid mb-5"
+            alt="Fashion Image"
+          />
+        </div>
+        <div class="col-12 col-md-3 child">
+          <img
+            src="images/pix3.jpg"
+            class="img-fluid mb-5"
+            alt="Fashion image"
+          />
+        </div>
+        <div class="col-12 col-md-3 child">
+          <img
+            src="images/pix4.jpg"
+            class="img-fluid mb-5"
+            alt="Fashion image"
+          />
+        </div>
       </div>
     </div>
+
+    <!--NEW ARIVAL SECTION-->
+    <section id="new-arival">
+      <div class="container new-arival">
+        <h2
+          class="text-center mb-5"
+          style="font-family: 'Playfair Display', serif; font-size: 400"
+        >
+          NEW ARRIVALS
+        </h2>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="card new-arrival-card text-center">
+              <img
+                src="https://i.ibb.co/b3DwzJN/pexels-tara-winstead-6479569.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glasses</h5>
+                <p class="card-text">$200</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="card new-arrival-card text-center">
+              <img
+                src="https://i.ibb.co/YfScQXL/pexels-lalesh-aldarwish-147641.jpg
+"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glasses</h5>
+                <p class="card-text">$200</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card new-arrival-card text-center">
+              <img
+                src="https://i.ibb.co/b7ZZTyr/pexels-skylar-kang-6045068.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glasses</h5>
+                <p class="card-text">$200</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card new-arrival-card text-center">
+              <img
+                src="https://i.ibb.co/q7NN3YQ/pexels-youssef-samuil-16093250.jpg
+"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glasses</h5>
+                <p class="card-text">$200</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-3">
+            <div class="card new-arrival-card text-center">
+              <img
+                src="https://i.ibb.co/b3DwzJN/pexels-tara-winstead-6479569.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glasses</h5>
+                <p class="card-text">$200</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="card new-arrival-card text-center">
+              <img
+                src="https://i.ibb.co/YfScQXL/pexels-lalesh-aldarwish-147641.jpg
+"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glasses</h5>
+                <p class="card-text">$200</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card new-arrival-card text-center">
+              <img
+                src="https://i.ibb.co/b7ZZTyr/pexels-skylar-kang-6045068.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glasses</h5>
+                <p class="card-text">$200</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card new-arrival-card text-center">
+              <img
+                src="https://i.ibb.co/q7NN3YQ/pexels-youssef-samuil-16093250.jpg
+"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glasses</h5>
+                <p class="card-text">$200</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--ABOUT SECTION-->
+    <section>
+      <div class="row">
+        <div class="col-12 about mb-5">
+          <div class="about-caption">
+            <h1
+              class="text-white"
+              style="font-family: 'Playfair Display', serif"
+            >
+              COLLECTION HOUSES OUR <br />
+              FIRST EVER
+            </h1>
+            <a href="#" class="btn btn-lg btn-success text-white"> About us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--TWO COLUMN SECTION-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img
+              src="images/pexels-cottonbro-studio-10679171.jpg"
+              class="img-fluid"
+              alt="single"
+            />
+            <div class="caption">
+              <p>Establish fact by readable content</p>
+              <a href="#" class="btn btn-lg btn-success text-white">
+                Shop now</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <img
+              src="images/pexels-cottonbro-studio-10679171.jpg"
+              class="img-fluid"
+              alt="single"
+            />
+            <div class="caption">
+              <p>Establish fact by readable content</p>
+              <a href="#" class="btn btn-lg btn-success text-white">
+                Shop now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-12 col-md-3 pe-2">
+            <h2 class="pt-5 pb-5">SHION HOUSE</h2>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+            </p>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <h2 class="pt-5 pb-5">QUICK LINKS</h2>
+            <ul>
+              <li>Image Licencing</li>
+              <li>Image Licencing</li>
+              <li>Image Licencing</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h2 class="pt-5 pb-5">QUICK LINKS</h2>
+            <ul>
+              <li>Image Licencing</li>
+              <li>Image Licencing</li>
+              <li>Image Licencing</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h2 class="pt-5 pb-5">QUICK LINKS</h2>
+            <ul>
+              <li>Image Licencing</li>
+              <li>Image Licencing</li>
+              <li>Image Licencing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
